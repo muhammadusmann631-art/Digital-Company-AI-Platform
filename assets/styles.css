@@ -1,0 +1,232 @@
+/* AI Multi-Tool Platform - Custom Styles */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Global Styles */
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Main Container */
+.main {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 2rem;
+}
+
+/* Sidebar Styling */
+.css-1d391kg {
+    background: linear-gradient(180deg, #1f2937 0%, #111827 100%);
+}
+
+/* Card Styling */
+.stCard {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    transition: all 0.3s ease;
+}
+
+.stCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.5);
+}
+
+/* Button Styling */
+.stButton > button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px 0 rgba(102, 126, 234, 0.4);
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px 0 rgba(102, 126, 234, 0.6);
+}
+
+/* File Uploader */
+.stFileUploader {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+}
+
+/* Text Input */
+.stTextInput > div > div > input {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: white;
+    padding: 0.75rem;
+}
+
+/* Select Box */
+.stSelectbox > div > div {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+/* Metric Cards */
+.stMetric {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(139, 92, 246, 0.2) 100%);
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Chat Message */
+.chat-message {
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.user-message {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin-left: 20%;
+}
+
+.bot-message {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    margin-right: 20%;
+}
+
+/* Sentiment Indicators */
+.sentiment-positive {
+    color: #10b981;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.sentiment-negative {
+    color: #ef4444;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.sentiment-neutral {
+    color: #f59e0b;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+/* Poetry Container */
+.poetry-container {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.3) 0%, rgba(99, 102, 241, 0.3) 100%);
+    padding: 2rem;
+    border-radius: 20px;
+    border-left: 5px solid #8b5cf6;
+    font-style: italic;
+    line-height: 1.8;
+    margin: 1rem 0;
+}
+
+/* Loading Animation */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Emotion Badge */
+.emotion-badge {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 0.5rem;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+/* Progress Bar */
+.stProgress > div > div > div {
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 2rem;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px 10px 0 0;
+    padding: 1rem 2rem;
+    font-weight: 600;
+}
+
+.stTabs [aria-selected="true"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Data Table */
+.dataframe {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Checkbox */
+.stCheckbox {
+    padding: 0.5rem;
+}
+
+/* Success Message */
+.stSuccess {
+    background: rgba(16, 185, 129, 0.2);
+    border-left: 4px solid #10b981;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+/* Error Message */
+.stError {
+    background: rgba(239, 68, 68, 0.2);
+    border-left: 4px solid #ef4444;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+/* Info Message */
+.stInfo {
+    background: rgba(59, 130, 246, 0.2);
+    border-left: 4px solid #3b82f6;
+    border-radius: 8px;
+    padding: 1rem;
+}
